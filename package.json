@@ -1,0 +1,29 @@
+{
+  "name": "mystaticpages",
+  "version": "0.0.1",
+  "description": "Static pages for my website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run css && npm run js && npm run html",
+    "css": "npm run css-compile && npm run css-min",
+    "css-min": "cleancss --source-map -o dist/css/main.min.css dist/css/main.css",
+    "css-compile": "node-sass --output-style expanded --source-map true ./src/scss/main.scss dist/css/main.css",
+    "js": "npm run js-dist && npm run js-min",
+    "js-dist": "mkdirp dist/js",
+    "js-min": "uglifyjs node_modules/bootstrap/dist/js/bootstrap.bundle.min.js src/js/* -c -m --source-map --comments '/^!/' -o dist/js/main.js",
+    "html": "cp index.html dist/"
+  },
+  "author": "Chenglong Wei",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.1.11",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.9.0",
+    "uglify-js": "^3.3.23",
+    "watch": "^1.0.2"
+  }
+}
