@@ -12,7 +12,11 @@
     "js": "npm run js-dist && npm run js-min",
     "js-dist": "mkdirp dist/js",
     "js-min": "uglifyjs node_modules/bootstrap/dist/js/bootstrap.bundle.min.js src/js/* -c -m --source-map --comments '/^!/' -o dist/js/main.js",
-    "html": "cp index.html dist/"
+    "html": "cp src/html/*.html dist/",
+    "watch": "npm-run-all --parallel watch-js watch-css watch-html",
+    "watch-css": "watch 'npm run css' src/scss",
+    "watch-js": "watch 'npm run js' src/js",
+    "watch-html": "watch 'npm run html' src/html"
   },
   "author": "Chenglong Wei",
   "license": "ISC",
@@ -23,6 +27,7 @@
     "clean-css-cli": "^4.1.11",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.2",
     "uglify-js": "^3.3.23",
     "watch": "^1.0.2"
   }
