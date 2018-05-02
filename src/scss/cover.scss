@@ -4,6 +4,7 @@
 
 /* Links */
 a {
+  &,
   &:focus,
   &:hover {
     color: #fff;
@@ -24,7 +25,7 @@ a {
 /*
  * Base structure
  */
- 
+
 html,
 body {
   height: 100%;
