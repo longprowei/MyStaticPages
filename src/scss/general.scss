@@ -23,3 +23,15 @@ body {
 footer {
   color: rgba(255, 255, 255, .5);
 }
+
+.social-links {
+  .nav {
+    .nav-item {
+        .nav-link {
+          i {
+            font-size: 1.8rem;
+          }
+        }
+    }
+  }
+}

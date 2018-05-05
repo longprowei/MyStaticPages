@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run css && npm run js && npm run html && npm run image",
+    "build": "npm run css && npm run js && npm run html && npm run image && npm run font-icon",
     "css": "npm run css-compile && npm run css-min",
     "css-min": "cleancss --source-map -o dist/css/main.min.css dist/css/main.css",
     "css-compile": "node-sass --output-style expanded --source-map true ./src/scss/main.scss dist/css/main.css",
+    "font-icon": "cp -r src/scss/icomoon/fonts dist/css",
     "image": "cp -r src/img dist/",
     "js": "npm run js-dist && npm run js-min",
     "js-dist": "mkdirp dist/js",
