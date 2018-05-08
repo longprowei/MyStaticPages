@@ -26,6 +26,12 @@ body {
       @include media-breakpoint-up(md) {
         float: left;
       }
+      a {
+        &:hover {
+          text-decoration: none;
+          font-size: 1.1em;
+        }
+      }
     }
 
     .masthead-nav {
