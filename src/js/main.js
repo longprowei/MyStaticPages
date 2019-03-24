@@ -6,9 +6,12 @@
  */
 (function() {
   'use strict';
-  console.log('Are you interested my site? Please access my Github: \n');
-  console.log('https://github.com/longprowei \n');
-  console.log('for source code.');
+  
+  function printGithubLink() {
+    console.log('Are you interested my site? Please access my Github: \n');
+    console.log('https://github.com/longprowei \n');
+    console.log('for source code.');
+  }
 
   function updateCopyrightYear() {
       var copyrightYear = $('#copyright-year');
@@ -19,4 +22,5 @@
   }
 
   updateCopyrightYear();
+  printGithubLink();
 })();
