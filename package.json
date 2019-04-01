@@ -20,7 +20,8 @@
     "watch-css": "watch 'npm run css' src/scss",
     "watch-image": "watch 'npm run image' src/img",
     "watch-js": "watch 'npm run js' src/js",
-    "watch-html": "watch 'npm run html' src/html"
+    "watch-html": "watch 'npm run html' src/html",
+    "serve": "browser-sync start --server 'dist' --files 'dist'"
   },
   "author": "Chenglong Wei",
   "license": "ISC",
@@ -28,6 +29,7 @@
     "bootstrap": "^4.3.1"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "clean-css-cli": "^4.2.1",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.11.0",
@@ -35,7 +37,7 @@
     "stylelint": "^9.2.0",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-scss": "^3.1.0",
-    "uglify-js": "^3.4.9",
+    "uglify-js": "^3.5.3",
     "watch": "^1.0.2"
   }
 }
