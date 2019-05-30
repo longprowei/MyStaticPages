@@ -36,8 +36,8 @@
     "npm-run-all": "^4.1.2",
     "stylelint": "^9.2.0",
     "stylelint-config-recommended-scss": "^3.3.0",
-    "stylelint-scss": "^3.6.1",
-    "uglify-js": "^3.5.11",
+    "stylelint-scss": "^3.7.0",
+    "uglify-js": "^3.5.15",
     "watch": "^1.0.2"
   }
 }
